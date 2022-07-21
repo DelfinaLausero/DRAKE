@@ -1,83 +1,44 @@
 *{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     
 }
 
 body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: rgb(13, 13, 13);
+    background-color: rgb(253, 253, 253);
 
 }
 
-.banner{
-    background-image: url(.//Assets/imagenes/fondo.jpg);
-    height: 50px;
-    background-color: rgb(255, 255, 255);
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-    
-       
+
+.nav__color {
+    background-color: rgb(245, 243, 251);
 }
 
-nav {
-    padding: 20px;
-    color: white;
-
+.text {
+    font-size: 60px;
 }
 
-.MenuSuperior { 
-    list-style-type: georgian;
-    text-align:end;
-    
-    
+.imagen {
+    width: 50px;
 }
 
-.MenuSuperior li {
-    display: inline-block;
-    
-}
+.carousel__alto {
+    height: 600px;
 
-.MenuSuperior a {
-    text-decoration: none;
-    text-transform:uppercase;
-    color: white;
-    padding: 1rem;
-    font-size: 1rem;
-  
-    
 }
-
  
-    
-
-.contenido {
-    line-height: 1.6;
-    background-color: rgb(164, 148, 148);
-    width: 60%;
-    float: left;
-    padding: 1rem;
-    border: solid rgb(248, 248, 248) 1px;
-    margin: 1rem;
-}
-
-.contenido img{
-    width: 40%;
-}
-
+     
+  
 
 
 .footer {
-    background-color: black;
-    color: white;
+    background-color:rgb(245, 243, 251);
+    color: rgb(90, 89, 89);
     clear: both;
     padding: 2rem;
     text-align: center;
-    text-decoration: double;
-    margin-bottom: 50px;
-  
+    
 }
 .footer__menu{
 list-style: none;
@@ -103,109 +64,20 @@ text-align: center;
 } 
 
 .enlace {
-    color: white;
+    color: black;
     text-decoration: none;
     font-size: 0.6rem;
     text-align: right;
 } 
 
-.formulario {
-background-color: rgb(203, 204, 205);
-} 
 
-.body__formulario {
-    background-color: rgb(7, 7, 7);
-    } 
-
-.SobreDrake {
-color: azure;
-
-} 
-
-.Albums__texto{
-    color: azure;
-    
-    } 
-
-/* Estilo Main Index */
-.gridpadre{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 50px 200px auto;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "texto texto im1"
-    "im2 im3 im4";
-    justify-content: center;
-    align-items: center;
-}
-
-h1{
-    grid-area: titulo;
-    text-align: center;
-    color: white;
-}
-
-p{
-    grid-area: texto;
-}
-
-.f1{
-    grid-area: im1;
-}
-
-.f2{
-    grid-area: im2;
-}
-
-.f3{
-    grid-area: im3;
-}
-
-.f4{
-    grid-area: im4;
-}
-
-.gridpadre img{
-    width: 400px;
-}
-
-
-
-@media only screen and (max-width: 480px){
-    .gridpadre {
-        display: grid;
-        grid-template-areas: 
-        "titulo titulo"
-        "texto texto 
-        "im1 im2"
-        "im3 im4";
-        grid-template-rows: 150px 300px auto auto;
-        grid-template-columns: 50% 50%;
-
-    }
-}
-
-
-/* Estilo Album */
-.gridpadre2{
-    display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 50px 200px auto;
-    grid-template-areas: 
-    "titulo titulo titulo"
-    "texto texto im1"
-    "im2 im3 im2" ;
-    justify-content: center;
-    align-items: flex-end;
-    
-}
 
 
 /* Transformaciones */
 
 h1{
-    color: rgb(242, 238, 238);
+    color: rgb(192, 192, 192);
+    font-size: large;
 }
 
 h1:hover{
@@ -214,8 +86,5 @@ h1:hover{
 }
 
 
-.transform:hover{
-    border: solid 5px salmon;
-    transform: scale(2,2);
-}
+
 

@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href=".//Assets/imagenes/icono.jpg" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
     <link rel="stylesheet" href="estilos.css">
     <title>D R A K E </title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
@@ -13,36 +14,71 @@
 </head>
 <body>
         <header class="banner" id="arriba">
+            <nav class="navbar navbar-expand-lg nav__color">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img src="./Assets/imagenes/icon.jpg" alt="" class="imagen">
+                  </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./views/Albums.html">Albums</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./views/Tours.html">Tours</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./views/Sobre Drake.html">Sobre Drake</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="./views/Contacto.html">Contacto</a>
+                      </li>                      
+                    </ul>
+                  </div>
+                </div>
+              </nav>
             <nav>
-
-                <ul class="MenuSuperior">
-                    <li><a href="./index.html">Home</a></li>
-                    <li><a href="./views/Albums.html">Albums</a></li>                               
-                    <li><a href="./views/Tours.html">Tours</a></li>
-                    <li><a href="./views/Sobre Drake.html">Sobre Drake</a></li>
-                    <li><a href="./views/Contacto.html">Contacto</a></li>
-
-                </ul>
-          <p><a href="#abajo" class="enlace">Ir abajo</a></p>   
+             
             </nav>
-
        
 
         </header>
     
-    <main class="gridPadre">
+
         <section class="contenido">
         <h1> DRAKE</h1>
-        
-        <img class="transform"" src="./Assets/imagenes/logo.jpg" alt="">
-        
-        <p class="animate__animated animate__slideInDown animate__slower">he truth is it’s hard to build a connection with music that’s this closed off. Drake’s music has become increasingly impersonalized, like he’s slotting into a rotating shift of roles. Up to IYRTITL there was a sense that you could create some sort of sketch of his life in your head, but now the details are too purposefully vague and cloudy. This isn’t some plea for bars about fatherhood over house beats, but the details and imperfections of his lyrics once made him feel like a real person instead of just a moodboard. It’s as if the goal of Honestly, Nevermind is anonymity—inoffensively, sort of fun music that simmers in the background all summer and beyond. That’s the opposite of what the appeal of Drake’s music has been for nearly 15 years, where it was like he wholeheartedly believed the world revolved around his trust issues and breakups. Unfortunately, Drake is the rare pop star who sounds better when he doesn’t think about anyone but himself.</p>
-        
-        <img class="f1" src="./Assets/imagenes/foto.jpg" alt="Drake">
-        <img class="f2" src="./Assets/imagenes/1" alt="">
-        <img class="f3" src="./Assets/imagenes/2" alt="">
-        <img class="f4" src="./Assets/imagenes/3" alt="">
-  
+        <p class="animate__animated animate__slideInDown animate__slower">Drake has released his follow-up to last year’s Certified Lover Boy. It’s called Honestly, Nevermind. The new LP includes 14 songs, and was executive produced by Drake.</p>
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="./Assets/imagenes/foto.jpg" class="d-block w-100 carousel__alto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/imagenes/drake.jpg" class="d-block w-100 carousel__alto" alt="...">
+              </div>
+              <div class="carousel-item">
+                <img src="./Assets/imagenes/portada.jpg" class="d-block w-100 carousel__alto" alt="...">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+
+
+
         </section>
         
       
@@ -78,6 +114,7 @@
         </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
 
 </body>
 </html>
